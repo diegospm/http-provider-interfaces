@@ -1,0 +1,34 @@
+{
+    "name":         "diegospm/http-provider-interfaces",
+    "description":  "Interfaces for client and response HTTP",
+    "type":         "library",
+    "license":      "MIT",
+    "homepage":     "https://github.com/diegospm",
+    "keywords": [
+        "HTTP",
+        "HTTP Provider",
+        "Client HTTP",
+        "Response HTTP"
+    ],
+    "authors": [
+        {
+            "name": "Diego Miranda",
+            "role": "Software Engineer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "HttpProvider\\Interfaces\\": "src/HttpProvider/Interfaces/"
+        }
+    },
+    "scripts": {
+        "lint": "php-cs-fixer fix --diff --dry-run",
+        "fix": "php-cs-fixer fix"
+    }
+}
